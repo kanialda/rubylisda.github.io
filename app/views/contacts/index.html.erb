@@ -1,2 +1,28 @@
-<h1>Contacts#index</h1>
-<p>Find me in app/views/contacts/index.html.erb</p>
+<div class="container clearfix">
+      <div class="row row-offcanvas row-offcanvas-left ">
+        <!--Bagian Kiri-->
+        <div class="col-xs-12 col-sm-3 side pull-left sidebar-offcanvas" id="sidebar" role="navigation">
+          <div class="list-group">
+          	<h2>Riku Kiranatama</h2>
+            <%= image_tag "u.jpg", height: 204, width: 204, class: "img-circle" %>
+          </div>
+        </div>
+
+        <!--Bagian Kanan-->
+        <div id="main-content" class="col-xs-12 col-sm-9 main pull-right">
+         <div class="panel-body">
+           <%= form_tag do %>
+           <div class="form-group">
+           <label for="exampleInputEmail1">Email </label>
+           <input id="email" class="form-control" name="email" type="email" placeholder="Your Email" />
+           </div>
+           <div class="form-group">
+           <label for="exampleInputMessage1">Message</label>
+           <textarea class="form-control" cols="25" id="message" name="message" rows="10" placeholder="Your Message"></textarea>
+           </div>
+           <button type="submit" class="btn btn-default">Submit</button>
+           <% end %>
+          </div>
+        </div>
+      </div>
+    </div>

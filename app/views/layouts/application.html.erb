@@ -6,7 +6,7 @@
     <%= stylesheet_link_tag    'application', media: 'all'%>
     <%= javascript_include_tag 'application', media: 'all'%>
   </head>
-  <body>
+  <body style="padding-top:60px;">  
   	 <div class="navbar navbar-fixed-top navbar-default" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -20,7 +20,7 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><%= link_to "Home", '/homes/index' %></li>
+            <li><%= link_to "Home", '/homes/index' %></li>
             <li><%= link_to "Profile", '/profiles/index' %></li>
             <li><%= link_to "Contact", '/contacts/index' %></li>
           </ul>
